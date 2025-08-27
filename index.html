@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
   <title>Mi Portafolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>Moira Alejandra Cabezas</h1>
-    <p>Estudiante de Tecnicatura Universitaria en Programación</p>
+    <p id="carrera">Estudiante de Tecnicatura Universitaria en Programación</p>
   </header>
 
   <section id="about">
@@ -22,22 +23,22 @@
     <div>
         <h3>Gestor de negocio - Programación 2021</h3>
         <p>Base de datos para una heladería.</p>
-        <!-- <a href=""> Ver en GitHub </a> -->
+        <!-- <a href="" target="_blank"> Ver en GitHub </a> -->
     </div>
     <div>
         <h3>Sitio de reservas - Programación de Aplicaciones Web 2025</h3>
         <p>Sitio web para hacer reservas de servicio de transporte.</p>
-        <!-- <a href=""> Ver en GitHub </a>-->
+        <!-- <a href="" target="_blank"> Ver en GitHub </a>-->
     </div>
     <div>
       <h3>Gestor de Transporte - Proyecto propio 2025</h3>
       <p>Aplicación para organizar pasajeros y servicios en una empresa de transporte.</p>
-      <!-- <a href="">Ver en GitHub</a> -->
+      <!-- <a href="" target="_blank">Ver en GitHub</a> -->
     </div>
     <div>
       <h3>Bot de WhatsApp - Proyecto propio 2025</h3>
       <p>Bot con botones interactivos usando la API oficial.</p>
-      <!-- <a href="">Ver demo</a> -->
+      <!-- <a href="" target="_blank">Ver demo</a> -->
     </div>
   </section>
 
@@ -45,27 +46,83 @@
     <h2>Habilidades</h2>
     <ul>
       <li>HTML, CSS, JavaScript</li>
-      <li>PostgreSQL y bases de datos</li>
+      <li>PostgreSQL</li>
       <li>Python</li>
-      <li>C, C++, C#</li>
+      <li>C, C++</li>
       <li>Java y programación orientada a objetos</li>
     </ul>
   </section>
-  <section>
+  <section id="pasatiempos">
     <h2>Pasatiempos</h2>
     <ul>
         <li>Grabar y editar videos</li>
-        <li>Hcaer trekking</li>
-        <li>Escritura creativa</li>
+        <li>Hacer trekking</li>
     </ul>
   </section>
+  <section id="consulta">
+    <h2>¿Tenes alguna consulta?</h2>
+    <form> 
+      <div class="campo_consulta">
+        <label for="consulta">Dejame tu consulta junto a tus datos y me contacto lo más pronto posible</label></br></br>
+        <textarea 
+          name="consulta" 
+          id="consulta_box" 
+          class="datos_consulta"
+          rows="6" 
+          cols="40" 
+          placeholder="Hola! Me gustaría preguntarte sobre...">
+        </textarea></br>
+      </div>
+      <div class="campo_consulta">
+        <label class="label_consulta" for="nombre_consulta">Tu nombre </label></br>
+        <input type="text" class="datos_consulta" name="nombre_consulta" id="nombre_consulta" placeholder="Nombre y apellido"></br>
+      </div>
+      <div class="campo_consulta">
+        <label class="label_consulta" for="correo_consulta">Correo electrónico</label></br>
+        <input type="text" class="datos_consulta" name="correo_consulta" id="correo_consulta" placeholder="tucorreo">
+        <select id="correo_consulta2" class="datos_consulta" >
+          <option value="" selected disabled>@tucorreo.com</option>
+          <option value="gmail">@gmail.com</option>
+          <option value="hotmail">@hotmail.com</option>
+          <option value="outlook">@outlook.com</option>
+          <option value="yahoo">@yahoo.com</option>
+        </select>
+
+
+      </div>
+      <div class="campo_consulta">
+        <label class="label_consulta" for="celular">Número celular </label></br>
+        <select class="datos_consulta" name="codigo_pais" id="codigo_pais">
+          <option value="" selected disabled>Cod. Área</option>
+          <option value="arg">+54</option>
+          <option value="ur">+598</option>
+          <option value="usa">+1</option>
+          <option value="par">+595</option>
+        </select> - 
+        <input 
+          type="text" 
+          id="cel_consulta" 
+          class="datos_consulta" 
+          name="cel_consulta" 
+          pattern="\d{10}"
+          minlength="10" 
+          maxlength="10" 
+          placeholder="3874789032"
+          required>
+        </div>
+
+    </form>
+  </section>
+
+
+
 
   <footer id="contact">
     <h2>Contacto</h2>
-    <p>E-mail: <a href="">moiracabezas16@gmail.com</a></p>
-
-    <p>GitHub: <a href="#">github.com/tuusuario</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/tuusuario</a></p>
+    <p>E-mail: <a id="boton_link" href="" class="button">moiracabezas16@gmail.com</a></p>
+    <a id="boton_link" href="https://github.com/moiracabezas" target="_blank" class="button">GitHub</a>
+    <a id="boton_link" href="https://www.linkedin.com/in/moira-cabezas-4057a2201/" target="_blank" class="button">LinkedIn</a>
+    <a id="boton_link" href="https://wa.me/5493874865397" target="_blank" class="button">WhatsApp</a>
   </footer>
 
 </body>

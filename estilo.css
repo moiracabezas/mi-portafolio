@@ -1,0 +1,59 @@
+body,#consulta_box,input,select{
+    color:rgb(255, 244, 244);
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(17, 16, 16);
+}
+h1{
+    text-align: center;
+    text-decoration:underline overline cornflowerblue;
+}
+a{
+    text-decoration: none;
+}
+#carrera{
+    text-align: center;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#boton_link{
+    color:antiquewhite;
+    font-weight: bold;
+}
+
+
+.button{
+    display: inline-block;
+    border: 4px solid rgb(157, 24, 190);
+    padding: 10px;
+    font-size: 100%;
+    margin-left: 10px;
+    background-color:rgb(157, 24, 190);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#consulta_box{
+    width: 40%;
+}
+#codigo_pais,#cel_consulta{
+    width: 9%;
+    padding: 10px;
+}
+.datos_consulta{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: medium;
+}
+.campo_consulta{
+    margin-bottom: 20px;   
+}
+#nombre_consulta,#correo_consulta{
+    width:20%;
+}
+
+
+
+
+
+
+
+
